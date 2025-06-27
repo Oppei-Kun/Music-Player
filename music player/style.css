@@ -1,0 +1,101 @@
+body{
+    background: #121212;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.player{
+    max-width: 300px;
+    margin: auto;
+    padding: 1rem;
+    background: #1e1e1e;
+    border: 1px double white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.album-art img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.controls button,
+.extras button {
+    background: #1db954;
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+}
+
+#progress {
+    flex: 1;
+    accent-color: #1db954;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#playlist li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+#playlist li.active {
+    background: #333;
+}
+
+body {
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+    background: #f3f3f3;
+    color: #111;
+}
+
+body.light .player {
+    background: #fff;
+    border: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light #playlist li.active {
+    background: #ddd;
+}
+
+body.light .controls button,
+body.light .extras button {
+    background: #007f5f;
+    color: white;
+}
+
+#upload-btn {
+    background: #1db954;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin: 1rem auto;
+    display: block;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+body.light #upload-btn {
+    background: #007f5f;
+}

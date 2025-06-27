@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Music Player</title>
+</head>
+<body>
+    <button id="toggle-theme">🌓</button>
+    <div class="player">
+        <div class="album-art">
+            <img id="art" src="https://via.placeholder.com/150" alt="Album Art">
+        </div>
+        <h2 id="title">Song title</h2>
+        <h3 id="artist">Artist</h3>
+        <audio id="audio" src=""></audio>
+        <div class="controls">
+            <button id="prev">◀</button>
+            <button id="play">▷</button>
+            <button id="pause">❚❚</button>
+            <button id="next">▶</button>
+        </div>
+        <div class="extras">
+            <button id="shuffle">⇄</button>
+            <button id="repeat">↻</button>
+        </div>
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress" value="0">
+            <span id="duration">0:00</span>
+        </div>
+        <ul id="playlist"></ul>
+        <input type="file" id="upload" accept="audio/*" multiple hidden>
+        <button id="upload-btn">📂 Upload songs</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
+
+</body>
+</html>
+
